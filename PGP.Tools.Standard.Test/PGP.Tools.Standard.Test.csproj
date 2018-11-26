@@ -13,9 +13,6 @@
     <None Update="Sample_file.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Sample_private_key.asc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Sample_public_key.asc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

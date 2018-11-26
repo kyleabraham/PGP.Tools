@@ -11,10 +11,10 @@ namespace PGP.Tools.Standard.Test
         {
             Console.WriteLine(Directory.GetCurrentDirectory());
             //GenerateKeyPair("test");
-            //EncryptFile();
-            //DecryptFile();
-            EncryptFileWithString();
-            DecryptFileWithString();
+            EncryptFile();
+            DecryptFile();
+            //EncryptFileWithString();
+            //DecryptFileWithString();
             //EncryptFileNSign();
             //DecryptFileNVerify();
             Console.ReadLine();
@@ -23,7 +23,7 @@ namespace PGP.Tools.Standard.Test
         private static void GenerateKeyPair(string keyName = null)
         {
             keyName = keyName ?? "Sample";
-            using (PGP.GenerateKey pgp = new PGP.GenerateKey())
+            using (PGP.KeyGenerator pgp = new PGP.KeyGenerator())
                 pgp.GenerateKeyPath(
                     publicKeyFilePath: $"{keyName}_public_key.asc",
                     privateKeyFilePath: $"{keyName}_private_key.asc",

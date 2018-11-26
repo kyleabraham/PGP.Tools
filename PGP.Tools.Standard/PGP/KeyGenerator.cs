@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace PGP.Tools.Standard.PGP
 {
-    public class GenerateKey : BaseEncryptDecrypt
+    public class KeyGenerator : BaseEncryptDecrypt
     {
-        public static readonly GenerateKey Instance = new GenerateKey();
+        public static readonly KeyGenerator Instance = new KeyGenerator();
 
-        public GenerateKey() : base() { }
+        public KeyGenerator() : base() { }
 
         #region GenerateKey
 

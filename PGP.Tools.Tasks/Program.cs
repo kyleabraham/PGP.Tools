@@ -68,6 +68,7 @@ namespace PGP.Tools.Tasks
             NLog.LogManager.LoadConfiguration("nlog.config");
 
             logger = ServiceProvider.GetService<ILogger<Program>>();
+            logger.LogInformation($"environmentName:{environmentName}");
         }
 
         private static void ConfigureServices(IServiceCollection services)

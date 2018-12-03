@@ -51,6 +51,7 @@ namespace PGP.Tools.Tasks.Tasks
                 }
 
                 logger.LogInformation("Completed directory encryption.");
+                result = true;
             }
             catch (Exception ex)
             {

@@ -44,6 +44,7 @@ namespace PGP.Tools.Tasks.Tasks
 
                     logger.LogInformation($"Completed file encryption '{outputFile}'.");
                 }
+                result = true;
             }
             catch (Exception ex)
             {

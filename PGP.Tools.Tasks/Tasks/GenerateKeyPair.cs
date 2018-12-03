@@ -42,6 +42,7 @@ namespace PGP.Tools.Tasks.Tasks
                         password: passPhrase);
 
                     logger.LogInformation($"Completed key pair generation.");
+                    result = true;
                 }
             }
             catch (Exception ex)

@@ -50,6 +50,7 @@ namespace PGP.Tools.Tasks.Tasks
                 }
 
                 logger.LogInformation("Completed directory decryption.");
+                result = true;
             }
             catch (Exception ex)
             {

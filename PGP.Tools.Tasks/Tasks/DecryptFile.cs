@@ -42,6 +42,7 @@ namespace PGP.Tools.Tasks.Tasks
                         passPhrase: passPhrase);
 
                     logger.LogInformation($"Completed file decryption '{outputFile}'.");
+                    result = true;
                 }
             }
             catch (Exception ex)

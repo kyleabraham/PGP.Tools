@@ -49,6 +49,7 @@ namespace PGP.Tools.Tasks
         static void BuildDependencyInjection()
         {
             var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
             var serviceCollection = new ServiceCollection();
             var builder = new ConfigurationBuilder()
                 .SetBasePath(System.IO.Directory.GetCurrentDirectory())
@@ -68,7 +69,7 @@ namespace PGP.Tools.Tasks
             NLog.LogManager.LoadConfiguration("nlog.config");
 
             logger = ServiceProvider.GetService<ILogger<Program>>();
-            logger.LogInformation($"environmentName:{environmentName}");
+            logger.LogInformation($"ASPNETCORE_ENVIRONMENT:{environmentName}");
         }
 
         private static void ConfigureServices(IServiceCollection services)

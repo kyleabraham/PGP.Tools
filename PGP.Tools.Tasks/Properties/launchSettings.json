@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PGP.Tools.Tasks": {
+      "commandName": "Project",
+      "commandLineArgs": "EncryptFiles --inputDirectory \"C:\\Deployments\\PGP Test Files\\CellC\\Original\" --outputDirectory \"C:\\Temp\\CellC Test\\Encrypted\" --publicKey \"C:\\Deployments\\PGP Keys\\Sample_public_key.asc\""
+    }
+  }
+}
